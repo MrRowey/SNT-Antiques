@@ -1,2 +1,2 @@
 # SNT-Antiques
-Website for Uni course
+Some of the pages may not work due to requing the SQL Script for the MySQL DB
