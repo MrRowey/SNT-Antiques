@@ -1,0 +1,215 @@
+:root {
+    /*Navigation*/
+    --nav-background: #008caad9;
+    --nav-mobile-button-color: #ffffff;
+    --nav-text-color: #ffffff;
+    --nav-text-color-hover: #3f3f3f;
+    --site-background: white;
+    --content-background:#333;
+
+    /*Font Size*/
+    --login: 20px
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Setting the While Body tag with background, font and wont weight*/
+
+body {
+    margin: 0px;
+    background: var(--site-background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+
+/* where the main content part is */
+.content {
+    height: 150vh;
+    background-color: var(--site-background);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-top: 70px;
+    place-items: center;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+}
+
+
+.login {
+    text-align: center;
+    border-spacing: 5px ;
+    padding: 25px ;
+    font-size: var(--login);
+    text-decoration: white;
+    color: var(--nav-text-color);
+}
+
+
+/* maniulating the css grid */
+
+input {
+    width: 20em;
+    height: 2.5em;
+}
+
+
+.title {
+    grid-column: 1/ span 5;
+}
+
+/* Navigaion styling */
+header {
+    background-color: var(--nav-background);
+    text-align: center;
+    position: fixed; /* Pining Navbar to top of the screen */
+    z-index: 999; /* Ensurting that the navbar is on top of all the content when scrolling */
+    width: 100%; /* Navbar is 100% the width of the screen */
+ }
+
+.nav-toggle {
+    display: none;
+}
+/* toggle for mobile navigation*/
+.nav-toggle-lable {
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-lable span,
+.nav-toggle-lable span::before,
+.nav-toggle-lable span::after {
+    display: block;
+    background: var(--nav-mobile-button-color);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-lable span::before,
+.nav-toggle-lable span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-lable span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-lable span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--nav-background);
+    width: 100%;
+    padding-left: 15px;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 50px ;
+    list-style: none;
+}
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+nav a:hover{
+    color: var(--nav-text-color-hover);
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+}
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+/* sets the nave bar to the mobile nav when screen size is less than 800px*/
+@media screen and (min-width: 800px) {
+.nav-toggle-lable {
+    display: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(650px, 2fr) 1fr;
+}
+
+.logo {
+    grid-column: 2/3;
+}
+
+nav {
+    all: unset;
+    grid-column: 4/5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 2em;
+    margin-bottom: 0;
+}
+
+nav a {
+    opacity: 1;
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: var(--nav-text-color-hover);
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    transform: scale(1,1);
+}
+}
