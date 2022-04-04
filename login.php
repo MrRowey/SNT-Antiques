@@ -22,7 +22,7 @@
 </head>
 <nav class="main-nav">
     <a href="/login.php">SignIn <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-    <a href="/newlisting.php">New Listings</a>
+    <a href="/addlisting.php">Add Listings</a>
     <a href="/auctions.php">Auctions</a>
     <a href="/about.php">About</a>
     <a href="/index.php">Home <i class="fa-solid fa-house"></i></a>

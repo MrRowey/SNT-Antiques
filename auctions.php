@@ -12,15 +12,20 @@
 <head>
     <title>SNT Antiques & Auctions</title>
     <meta charset="UTF-8"> 
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="/css/nav.css" type="text/css">
+    <link rel="stylesheet" href="/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="/css/about.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 
     <!-- Adding FontAwesome Scrips-->
     <script src="https://kit.fontawesome.com/f5f2392733.js" crossorigin="anonymous"></script>
     
 </head>
+<!-- Site Navigation -->
 <nav class="main-nav">
     <a href="/login.php">SignIn <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-    <a href="/newlisting.php">New Listings</a>
+    <a href="/addlisting.php">Add Listings</a>
     <a href="/auctions.php">Auctions</a>
     <a href="/about.php">About</a>
     <a href="/index.php">Home <i class="fa-solid fa-house"></i></a>
