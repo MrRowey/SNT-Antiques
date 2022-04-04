@@ -1,11 +1,5 @@
-<html>
-    <?php 
-        $dbhost = 'localhost';
-        $dbuser = 'website';
-        $dbpass = 'foo';
-        $dbname = 'website';
-
-        $conn = new mysqli($dbhost, $dbuser, $dbpass,$dbname);
+<?php 
+        $conn = new mysqli('localhost','SNT_Info','I[gRTDcUmH[K6FSG','snt');
 
         if($conn->connect_error) {
             die("connecion failid: " . $conn->connect_error);
@@ -13,59 +7,81 @@
 
         $sql = "SELECT userId, username, email FROM users";
         $result = $conn->query($sql); 
-    ?>
+?>
+<html>
 <head>
     <title>SNT Antiques & Auctions</title>
     <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="/Uni/assets/css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="/css/nav.css" type="text/css">
+    <link rel="stylesheet" href="/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="/css/home.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
 
     <!-- Adding FontAwesome Scrips-->
     <script src="https://kit.fontawesome.com/f5f2392733.js" crossorigin="anonymous"></script>
     
 </head>
-<header>
-    <a href="/index.php"><img src="/Uni/assets/images/logo/logo.png" alt="logo" class="logo"></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav class="nav-main">
-        <ul>
-            <li>
-                <a href="/index.php">
-                    <i class="fa-solid fa-house"></i> Home
-                </a>
-            </li> 
-            <li><a href="/pages/about.html">About</a></li> 
-            <li><a href="/pages/items.html">Listings</a></li>
-            <li><a href="/pages/items.html">New Items</a></li>
-            <li><a href="/pages/contact_us.html">Contact</a></li>
-            <li>
-                <a href="/pages/login.html">
-                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Login                       
-                </a>
-            </li> 
-        </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-lable">
-        <span></span>
-    </label>
-</header>
+<!-- Site Navigation -->
+<nav class="main-nav">
+    <a href="/login.php">SignIn <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+    <a href="/newlisting.php">New Listings</a>
+    <a href="/auctions.php">Auctions</a>
+    <a href="/about.php">About</a>
+    <a href="/index.php">Home <i class="fa-solid fa-house"></i></a>
+    <img src="/images/logo/logo.png" class="logo">
+</nav>
 
-<div class="content">
-    <p>  <?php
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                echo "User ID: " . $row["userId"] . " - Username: " . $row[" -username"] . "Email: " . $row["email"]. "<br>";
-            }
-        } else {
-            echo "0 results";
+<!--  Main Content secion  -->
+<main class="gridContainerHome">
+    <div class="main-slideshow">
+            <!-- Setting the images -->
+        <div class="picture fade">
+            <img src="/images/home/img1.jpg" alt="Imge 1" style="width:100%;">
+        </div>
+
+        <div class="picture fade">
+            <img src="/images/home/img2.jpg" alt="Imge 2" style="width:100%;">
+        </div>
+
+        <div class="picture fade">
+            <img src="/images/home/img3.jpg" alt="Imge 3" style="width:100%;">
+        </div> 
+    </div><br>
+    <div>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("picture");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1;}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); 
         }
-        $conn->close();
-    ?> </p>
-       
-    
-    <h2 class="title"></h2>
-</div>
+    </script>
 
-<footer>
-
+    <h1>Home</h1>
+</main>
+<footer class="main-footer">
+   <p class="grid-item1">SNT Antiques & Actions <br>9213 Church Road <br> ROCHESTER <br> ME53 2HL</p>
+   <p class="grid-item2"> <i class="fa-solid fa-copyright"></i> Copyright of SNT Antiques & Auctions 2022</p>
+   <p class="grid-item3"><i class="fa-solid fa-phone-flip"></i> Tel: 01743568324</p>
 </footer>
 </html>
