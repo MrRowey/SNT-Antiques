@@ -1,14 +1,8 @@
 .gridContainerHome {
     display: grid;
+    text-align: center;
     
 }
-
-
-
-
-
-
-
 
 .main-slideshow {
     max-width: 100%;

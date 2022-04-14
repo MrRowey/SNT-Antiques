@@ -1,5 +1,3 @@
-<!-- Admin User PS: Qt4e*b[!jsc.vg4S -->
-
 <?php 
         $conn = new mysqli('localhost','website','foo','website');
 
@@ -14,12 +12,10 @@
 <head>
     <title>SNT Antiques & Auctions</title>
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- StyleSheets -->
     <link rel="stylesheet" href="/css/nav.css" type="text/css">
     <link rel="stylesheet" href="/css/footer.css" type="text/css">
-    <link rel="stylesheet" href="/css/home.css" type="text/css">
+    <link rel="stylesheet" href="/css/about.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 
     <!-- Adding FontAwesome Scrips-->
@@ -28,19 +24,15 @@
 </head>
 <nav class="main-nav">
     <a href="/login.php">SignIn <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-    <a href="/addlisting.php">Add Listings</a>
+    <a href="/addlisting.php"> Listings</a>
     <a href="/auctions.php">Auctions</a>
     <a href="/about.php">About</a>
     <a href="/index.php">Home <i class="fa-solid fa-house"></i></a>
     <img src="/images/logo/logo.png" class="logo">
 </nav>
-<main>
-<h1>Login</h1>
+<main class="content">
 
-<form action=""></form>
-
-
-
+<h1>New Items</h1>
 
 
 </main>
