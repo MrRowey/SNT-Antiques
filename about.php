@@ -1,45 +1,69 @@
-<?php 
-        $conn = new mysqli('localhost','SNT_Info','I[gRTDcUmH[K6FSG','snt');
-
-        if($conn->connect_error) {
-            die("connecion failid: " . $conn->connect_error);
-        }
-
-        $sql = "SELECT userId, username, email FROM users";
-        $result = $conn->query($sql); 
-?>
 <html>
 <head>
-    <title>SNT Antiques & Auctions</title>
+    <title>SNT About</title>
     <meta charset="UTF-8"> 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- StyleSheets -->
-    <link rel="stylesheet" href="/css/nav.css" type="text/css">
-    <link rel="stylesheet" href="/css/footer.css" type="text/css">
-    <link rel="stylesheet" href="/css/about.css" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-
-    <!-- Adding FontAwesome Scrips-->
-    <script src="https://kit.fontawesome.com/f5f2392733.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<nav class="main-nav">
-    <a href="/login.php">SignIn <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-    <a href="/addlisting.php">Add Listings</a>
-    <a href="/auctions.php">Auctions</a>
-    <a href="/about.php">About</a>
-    <a href="/index.php">Home <i class="fa-solid fa-house"></i></a>
-    <img src="/images/logo/logo.png" class="logo">
+<!-- Site Navigation -->
+<nav class="w3-bar w3-right w3-blue">
+    <a class="w3-bar-item w3-button" href="/index.php">Home</a>
+    <a class="w3-bar-item w3-button" href="/about.php">About</a>
+    <a class="w3-bar-item w3-button" href="/currentandnew.php">Current & New Stock</a>
+    <a class="w3-bar-item w3-button" href="/auctionsandtheme.php">Auctions & Themedays</a>
 </nav>
-<main class="grid_container_about">
-    <img class="about-img" src="/images/Banner placeholder.webp" alt="Image">
-    <h2 class="about-h2"> Who we are</h2>
-    <p class="about-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat delectus facilis explicabo consequuntur, blanditiis dolorum voluptates exercitationem similique, aspernatur repellendus ipsa aut beatae accusamus iure laudantium quo magni, nostrum illum.</p>
+<!--  Main Content secion  -->
+<main class="w3-container">
+  <div class="w3-containter w3-padding-16">
+      <img class="w3-center w3-round-large" style="width:100%"src="/images/Banner placeholder.webp" alt="Image">
+      <h2><b>Who we are</b></h2>
+      <p class="about-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat delectus facilis explicabo consequuntur, blanditiis dolorum voluptates exercitationem similique, aspernatur repellendus ipsa aut beatae accusamus iure laudantium quo magni, nostrum illum.</p>    
+  </div>
+  <hr>
+  <div class="w3-containter">
+    <h2><b>Oppeing Times</b></h2>
+    <table>
+      <tr>
+        <th>Monday:</th>
+        <td>8-4</td>
+      </tr>
+      <tr>
+        <th>Tuesday:</th>
+        <td>8-4</td>
+      </tr>
+      <tr>
+        <th>Wednesday:</th>
+        <td>8-4</td>
+      </tr>
+      <tr>
+        <th>Thursday:</th>
+        <td>8-4</td>
+      </tr>
+      <tr>
+        <th>Friday:</th>
+        <td>8-4</td>
+      </tr>
+      <tr>
+        <th>Saturday:</th>
+        <td>10-2</td>
+      </tr>
+      <tr>
+        <th>Sunday:</th>
+        <td>10-12</td>
+      </tr>
+    </table>
+  </div>
 
 </main>
-<footer class="main-footer">
-   <p class="grid-item1">SNT Antiques & Actions <br>9213 Church Road <br> ROCHESTER <br> ME53 2HL</p>
-   <p class="grid-item2"> <i class="fa-solid fa-copyright"></i> Copyright of SNT Antiques & Auctions 2022</p>
-   <p class="grid-item3"><i class="fa-solid fa-phone-flip"></i> Tel: 01743568324</p>
+<footer class="w3-container w3-gray w3-bottom">
+    <div class="w3-row">
+        <div class="w3-col s6 w3-center"><p>SNT Antiques & Actions <br>9213 Church Road <br> ROCHESTER <br> ME53 2HL</p></div>
+        <div class="w3-col s6 w3-center"><p>Tel: 01743568324 <br><br> Email: SN-Sales@SNT.com</p></div>
+    </div>
+    <div w3-row>
+    <div class="w3-col s6 w3-center"><p>Copyright of SNT Antiques & Auctions 2022</p></div>
+    <div class="w3-col s6 w3-center" ><a href="/admin/home.php">Admin Login</a></div>
+    </div>
 </footer>
 </html>
