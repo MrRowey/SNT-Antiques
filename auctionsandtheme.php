@@ -42,42 +42,24 @@
       <th class="w3-center">Winter</th>
     </tr>
     <tr>
-      <td class="w3-center"><img src="/images/150.webp" alt="placeholder"></td>
-      <td class="w3-center"><img src="/images/150.webp" alt="placeholder"></td>
-      <td class="w3-center"><img src="/images/150.webp" alt="placeholder"></td>
-      <td class="w3-center"><img src="/images/150.webp" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:200px;" src="/images/theme/summer.jpg" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:200px;" src="/images/theme/spring.jpg " alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:200px;" src="/images/theme/autumn.jpg" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:200px;" src="/images/theme/winter.jpg" alt="placeholder"></td>
     </tr>
     <tr>
-      <td class="w3-center">Date of event</td>
-      <td class="w3-center">Date of event</td>
-      <td class="w3-center">Date of event</td>
-      <td class="w3-center">Date of event</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="w3-center">About the Event</td>
-      <td class="w3-center">About the Event</td>
-      <td class="w3-center">About the Event</td>
-      <td class="w3-center">About the Event</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td class="w3-center">Date of event: 1st June</td>
+      <td class="w3-center">Date of event: 1st March</td>
+      <td class="w3-center">Date of event: 1st September</td>
+      <td class="w3-center">Date of event: 1st December</td>
     </tr>
   </table>
   <h1>Current Auctions</h1>
   <table class="w3-table">
     <tr>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px;" src="/images/Auctions/cabinet.jpg" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px;" src="/images/stock/train.jpg" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px;" src="/images/stock/pantingB.jpg" alt="placeholder"></td>
     </tr>
     <tr>
       <td class="w3-center">Current Time Left: <br> <?php echo "$days days $hours hours $min min $sec sec left"?></td>
@@ -90,9 +72,9 @@
       <td class="w3-center"><a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-green w3-round">Want to place a bid!</a></td>
     </tr>
     <tr>
-      <td class="w3-center">Current Price: £100</td>
-      <td class="w3-center">Current Price: £100</td>
-      <td class="w3-center">Current Price: £100</td>
+      <td class="w3-center">Current Price: £335</td>
+      <td class="w3-center">Current Price: £800</td>
+      <td class="w3-center">Current Price: £4,500</td>
     </tr>
   </table>
 
@@ -106,8 +88,8 @@
     <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: 20th Centery Cabinet</P>
+      <p>Item ID: #003</p>
     </div>
     <footer class="w3-container w3-teal">
       <P>Please Ring our number and quote the Item Id you wish to bid on.</P>
@@ -122,8 +104,8 @@
       <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: Hornby Train Mint Condiciton</P>
+      <p>Item ID: #339</p>
     </div>
     <footer class="w3-container w3-teal">
       <P>Please Ring our number and quote the Item Id you wish to bid on.</P>
@@ -138,8 +120,8 @@
     <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: 20th Centery painting</P>
+      <p>Item ID: #568</p>
     </div>
     <footer class="w3-container w3-teal">
       <P>Please Ring our number and quote the Item Id you wish to bid on.</P>

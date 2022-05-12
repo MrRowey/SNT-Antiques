@@ -20,9 +20,9 @@
   <h1>Current Stock</h1>
   <table class="w3-table">
     <tr>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px;" src="/images/stock/warmedales.JPG" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px;" src="/images/stock/book.jpg" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px;" src="/images/stock/jelrey.jpg" alt="placeholder"></td>
     </tr>
     <tr>
       <td class="w3-center"><a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-round">Want to purchase this item!</a></td>
@@ -30,17 +30,17 @@
       <td class="w3-center"><a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-green w3-round">Want to purchase this item!</a></td>
     </tr>
     <tr>
-      <td class="w3-center">Current Price: £100</td>
-      <td class="w3-center">Current Price: £100</td>
-      <td class="w3-center">Current Price: £100</td>
+      <td class="w3-center">Current Price: £300</td>
+      <td class="w3-center">Current Price: £900</td>
+      <td class="w3-center">Current Price: £450</td>
     </tr>
   </table>
   <h1>New Arrivals</h1>
   <table class="w3-table">
     <tr>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
-      <td><img src="/images/350px placeholder.webp" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px" src="/images/stock/gameset.JPG" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px" src="/images/stock/persianrung.jpg" alt="placeholder"></td>
+      <td class="w3-center"><img style="max-width:350px" src="/images/stock/toytruck.jpg" alt="placeholder"></td>
     </tr>
     <tr>
       <td class="w3-center"><a onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-green w3-round">Want to purchase this item!</a></td>
@@ -48,9 +48,9 @@
       <td class="w3-center"><a onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-green w3-round">Want to purchase this item!</a></td>
     </tr>
     <tr>
-      <td class="w3-center">Current Price: £100</td>
-      <td class="w3-center">Current Price: £100</td>
-      <td class="w3-center">Current Price: £100</td>
+      <td class="w3-center">Current Price: £335</td>
+      <td class="w3-center">Current Price: £800</td>
+      <td class="w3-center">Current Price: £4,500</td>
     </tr>
   </table>
 
@@ -63,8 +63,8 @@
     <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: 20th Centery Cabinet</P>
+      <p>Item ID: #003</p>
     </div>
     <footer class="w3-container w3-teal">
       <P>Please Ring our number and quote the Item Id you wish purchase</P>
@@ -79,8 +79,8 @@
       <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: Hornby Train Mint Condiciton</P>
+      <p>Item ID: #339</p>
     </div>
     <footer class="w3-container w3-teal">
       <P>Please Ring our number and quote the Item Id you wish purchase</P>
@@ -168,7 +168,7 @@
 
 
 </main>
-<footer class="w3-container w3-gray w3-bottom">
+<footer class="w3-container w3-gray">
     <div class="w3-row">
         <div class="w3-col s6 w3-center"><p>SNT Antiques & Actions <br>9213 Church Road <br> ROCHESTER <br> ME53 2HL</p></div>
         <div class="w3-col s6 w3-center"><p>Tel: 01743568324</p></div>

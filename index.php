@@ -17,52 +17,32 @@
 
 <!--  Main Content secion  -->
 <main class="w3-container">
-    <div class="w3-content w3-section" style="max-width:100%;">
-        <img class="mySlides" src="/images/home/img1.jpg" alt="Imge 1" style="width:100%;">
-        <img class="mySlides" src="/images/home/img2.jpg" alt="Imge 2" style="width:100%;">
-        <img class="mySlides" src="/images/home/img3.jpg" alt="Imge 3" style="width:100%;">
+    <div class="w3-content w3-center w3-section" style=" max-width:100%;">
+        <img src="/images/home.jpg" style="width:75%;">/
     </div>
-    <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel(){
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++){
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if(myIndex > x.length){myIndex = 1}
-            x[myIndex-1].style.display = "block";
-            setTimeout(carousel, 5000); // change every 5 seconds
-        }
-    </script>
-
-    <h1>Home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quidem repudiandae. Reiciendis labore fugiat facilis commodi. Reprehenderit facilis velit maxime ducimus. Quibusdam nobis dolorem explicabo consectetur sit quo, aliquid deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis recusandae minus corporis ad temporibus sunt eos inventore rerum aut aperiam, impedit iure, molestiae accusamus totam nemo dolores culpa provident. Lorem ipsum dolor sit amet 
+    <h1>SNT Antiques & Auctions</h1>
     </p>
     <h1>Featuer Items</h1>
     <div class="w3-row">
-        <div class="w3-col s4 w3-center w3-green ">
-            <h4>Item Name</h4>
-            <img src="/images/200px placeholder.webp" alt="">
-            <p>Price: £1000</p>
-            <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white w3-round">Want to purchase this Featuerd Item!</a>   
+        <div class="w3-col s4 w3-center">
+            <h4>Watercolor Painting</h4>
+            <img src="/images/feature/watercolor.jpg" alt="">
+            <p>Price: £450</p>
+            <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-round">Want to purchase this Featuerd Item!</a>   
             <p></p>
         </div> 
-        <div class="w3-col s4 w3-center w3-red">
-            <h4>Item Name</h4>
-            <img src="/images/200px placeholder.webp" alt="">
-            <p>Price: £1000</p>
-            <a onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-white w3-round">Want to purchase this Featuerd Item!</a>   
+        <div class="w3-col s4 w3-center">
+            <h4>India Tea Set</h4>
+            <img src="/images/feature/teasent.jpg" alt="">
+            <p>Price: £1,200</p>
+            <a onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green w3-round">Want to purchase this Featuerd Item!</a>   
             <p></p>
         </div>
-        <div class="w3-col s4 w3-center w3-orange">
-            <h4>Item Name</h4>
-            <img src="/images/200px placeholder.webp" alt="">
-            <p>Price: £1000</p>
-            <a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-white w3-round">Want to purchase this Featuerd Item!</a>   
+        <div class="w3-col s4 w3-center">
+            <h4>20th Centery Cabinet</h4>
+            <img src="/images/Auctions/cabinet.jpg" alt="">
+            <p>Price: £659</p>
+            <a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-green w3-round">Want to purchase this Featuerd Item!</a>   
             <p></p>    
         </div>    
     </div>
@@ -76,11 +56,11 @@
     <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: WaterColor painting</P>
+      <p>Item ID: #345</p>
     </div>
     <footer class="w3-container w3-teal">
-      <P>Please Ring our number and quote the Item Id you wish purchase</P>
+      <P>Please Ring our number and quote the Item Id & Item Name you wish purchase</P>
     </footer>
   </div>
 </div>
@@ -92,11 +72,11 @@
       <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: India Tea Set</P>
+      <p>Item ID: #657</p>
     </div>
     <footer class="w3-container w3-teal">
-      <P>Please Ring our number and quote the Item Id you wish purchase</P>
+      <P>Please Ring our number and quote the Item Id & Item Name you wish purchase</P>
     </footer>
   </div>
 </div>
@@ -108,8 +88,8 @@
     <h2>How to Purchase</h2>
     </header>
     <div class="w3-container">
-      <P>Item Name:</P>
-      <p>Item ID:</p>
+      <P>Item Name: 20th Centery Cabinet</P>
+      <p>Item ID: #003</p>
     </div>
     <footer class="w3-container w3-teal">
       <P>Please Ring our number and quote the Item Id you wish purchase</P>
@@ -119,7 +99,7 @@
 
 
 </main>
-<footer class="w3-container w3-gray w3-bottom">
+<footer class="w3-container w3-gray">
     <div class="w3-row">
         <div class="w3-col s6 w3-center"><p>SNT Antiques & Actions <br>9213 Church Road <br> ROCHESTER <br> ME53 2HL</p></div>
         <div class="w3-col s6 w3-center"><p>Tel: 01743568324 <br><br> Email: SN-Sales@SNT.com</p></div>
